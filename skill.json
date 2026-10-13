@@ -1,0 +1,25 @@
+{
+  "name": "genpark-enterprise-incident-postmortem-root-cause-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "Enterprise SRE Incident Postmortem & Root Cause Synthesizer. Correlates distributed telemetry alarms across microservice dependency DAGs, isolates the First Bad Event root cause, traces downstream cascading blast radius, and generates automated 5-Whys causal chains with actionable preventative remediation tasks.",
+  "homepage": "https://www.genpark.ai",
+  "linkedin": "https://www.llinkedin.com/company/92955550",
+  "tools": [
+    {
+      "name": "synthesize_postmortem",
+      "description": "Synthesize SRE incident root cause postmortem with 5-Whys analysis and action items.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "incident_data": {
+            "type": "object",
+            "description": "Incident telemetry payload including alarms, service dependencies, and suspected triggers."
+          }
+        },
+        "required": [
+          "incident_data"
+        ]
+      }
+    }
+  ]
+}
